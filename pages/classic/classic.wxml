@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="header">
+    <v-episode class="episode" index="{{ classicData.index }}"/>
+    <v-like class="like" bind:like="onLike" like="{{ likeStatus }}" count="{{ likeCount }}"/>
+  </view>
+  <!-- like="{{ classicData.like_status }} 属性绑定，绑定从服务器拿到的数据 -->
+  <v-movie hidden="{{ classicData.type!=100 }}" img="{{ classicData.image }}" content="{{ classicData.content }}"/>
+
+  <v-music wx:if="{{ classicData.type==200 }}" img="{{ classicData.image }}"
+  content="{{ classicData.content }}" src="{{ classicData.url }}" title="{{classicData.title}}" />
+
+  <v-essay hidden="{{ classicData.type!=300 }}" img="{{ classicData.image }}"
+  content="{{ classicData.content }}"/>
+
+  <v-navi bind:left="onNext" bind:right="onPrevious" title="{{ classicData.title }}" first="{{ first }}" latest="{{ latest }}" class="navi"/>
+</view>

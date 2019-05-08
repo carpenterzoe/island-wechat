@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-book":"/components/book/index"
+  }
+}

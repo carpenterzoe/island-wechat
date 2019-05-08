@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+}
+
+.header{
+  width: 100%; 
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.episode{
+  margin-left: 20rpx;
+  margin-top: 4rpx;
+}
+
+.like{
+  margin-top: 6rpx;
+}
+
+.navi{
+  position: absolute;
+  bottom: 40rpx;
+}
