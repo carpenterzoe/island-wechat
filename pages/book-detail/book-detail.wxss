@@ -47,3 +47,148 @@
   color: #2f2f2f;
   margin-bottom: 20rpx;
 }
+
+.comment-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comment-container v-tag{
+  margin-right: 15rpx;
+  margin-bottom: 10rpx;
+}
+
+.content{
+  text-indent: 58rpx;
+  font-weight: 500;
+}
+
+.num{
+  margin-left: 10rpx;
+  font-size: 22rpx;
+  color: #aaa;
+}
+
+/* .comment-container > v-tag:nth-child(1) > view{
+  background-color: #fffbdd;
+} */
+
+/* 在 pages 页面中，修改 components 组件内部的样式 */
+
+/* .comment-container > v-tag:nth-child(2) > view{
+  background-color: #eefbff;
+} */
+
+.ex-tag1{
+  background-color: #fffbdd !important;
+}
+
+.ex-tag2{
+  background-color: #eefbff !important;
+}
+
+.detail-container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 100rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.vertical{
+  display: flex;
+  flex-direction: column;
+}
+
+.description{
+  color: #999;
+  margin-right: 30rpx;
+}
+
+.post-container{
+  height: 100rpx;
+  box-shadow: 1px -1px 1px #e3e3e3;
+  position: fixed;
+  width: 690rpx;
+  background-color: #fff;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  justify-content: space-between;
+}
+
+.post-fake{
+  display: flex;
+  align-items: center;
+  height: 60rpx;
+  width: 460rpx;
+  border: 1px solid #999;
+  border-radius: 15px;
+  font-size: 22rpx;
+  padding-left: 20rpx;
+}
+
+.like{
+  margin-right: 30rpx;
+  margin-top: 10rpx;
+}
+
+.like-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posting-container{
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  z-index: 999;
+}
+
+.post-header{
+  width: 100%;
+  border-bottom: 1px solid #f5f5f5;
+  border-top: 1px solid #f5f5f5;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cancel{
+  color: #666;
+}
+
+.post-header text{
+  padding: 25rpx;
+}
+
+.post-header>text:first-child{
+  font-size: 28rpx;
+  color: #bbb;
+}
+
+.posting-container .comment-container{
+  width: 690rpx;
+  padding: 40rpx 30rpx 0 30rpx;
+}
+
+.post{
+  width: 690rpx;
+  margin: 30rpx auto;
+  height: 56rpx;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding-left: 25rpx;
+}
+
+.shadow{
+  color: #999;
+}

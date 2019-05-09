@@ -1,0 +1,22 @@
+
+// 书籍简介 \n 正常显示换行
+var format = function(text){
+
+  if(!text) return   
+
+  //  数据初始化的时候，还没有从服务器获取到数据
+  //  <text class="content">{{ util.format(book.summary) }}</text>
+  
+  var reg = getRegExp('\\\\n', 'g')
+  return text.replace(reg, '\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;')
+}
+
+// 截取短评数量
+var limit = function(array, length){
+  return array.slice(0, length)
+}
+
+module.exports = {
+  format: format,
+  limit: limit
+}
