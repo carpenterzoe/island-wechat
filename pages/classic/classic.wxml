@@ -1,8 +1,15 @@
 <view class="container">
   <view class="header">
     <v-episode class="episode" index="{{ classicData.index }}"/>
-    <v-like class="like" bind:like="onLike" like="{{ likeStatus }}" count="{{ likeCount }}"/>
+
+    <view class="like-container">
+      <v-like class="like" bind:like="onLike" like="{{ likeStatus }}" count="{{ likeCount }}"/>
+      <v-button class="share-btn" open-type="share">
+        <image class="share" slot="img" src="/images/icon/share.png" />
+      </v-button>
+    </view>
   </view>
+
   <!-- like="{{ classicData.like_status }} 属性绑定，绑定从服务器拿到的数据 -->
   <v-movie hidden="{{ classicData.type!=100 }}" img="{{ classicData.image }}" content="{{ classicData.content }}"/>
 
