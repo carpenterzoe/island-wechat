@@ -1,4 +1,4 @@
-// components/episode/index.js
+
 Component({
   /**
    * 组件的属性列表
@@ -17,9 +17,6 @@ Component({
     }
   },
 
-  /**
-   * 组件的初始数据
-   */
   data: {
     months: [
       '一月','二月','三月','四月','五月','六月',

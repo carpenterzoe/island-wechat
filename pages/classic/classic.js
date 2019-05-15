@@ -21,17 +21,13 @@ Page({
     likeStatus: false
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
+   // this.setData 拿到服务器的数据之后数据绑定，更新 properties（组件里的） 用 this.setData
+   // this.setData 用来更新数据，可以更新页面中的data，或者组件的 properties
+   // properties也是 data的一种， 只不过一个是开放的，一个是私有的
+
   onLoad: function (options) {
     classicModel.getLatest((res) => {
 
-      // this._getLikeStatus(res.id, res.type)
-      
-      // this.setData 拿到服务器的数据之后数据绑定，更新 properties（组件里的） 用 this.setData
-      // this.setData 用来更新数据，可以更新页面中的data，或者组件的 properties
-      // properties也是 data的一种， 只不过一个是开放的，一个是私有的
       this.setData({  
         classicData: res,
         likeCount: res.fav_nums,

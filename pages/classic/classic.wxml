@@ -18,6 +18,6 @@
 
   <v-essay hidden="{{ classicData.type!=300 }}" img="{{ classicData.image }}"
   content="{{ classicData.content }}"/>
-
+  
   <v-navi bind:left="onNext" bind:right="onPrevious" title="{{ classicData.title }}" first="{{ first }}" latest="{{ latest }}" class="navi"/>
 </view>

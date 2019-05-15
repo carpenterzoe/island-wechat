@@ -1,4 +1,4 @@
-import {config} from '../config.js' //  为什么用 {}
+import {config} from '../config.js' //  只能用相对路径import，否则小程序解析错误
 
 const tips = {
   1: '抱歉，出现了一个错误',

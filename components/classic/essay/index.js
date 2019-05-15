@@ -1,9 +1,7 @@
 import { classicBeh } from '../behavior.js'
 
 Component({
-  /**
-   * 组件的属性列表
-   */
+
   behaviors: [classicBeh], // 继承公共behavior
 
   properties: {
